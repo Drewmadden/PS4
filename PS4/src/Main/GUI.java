@@ -20,9 +20,6 @@ public class GUI {
 	private JTextField YearlyInterest;
 	private JTextField futureValue;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -33,19 +30,14 @@ public class GUI {
 					e.printStackTrace();
 				}
 			}
-		});
+		}			)
+		;
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public GUI() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	private void initialize() {
 		
 		frame = new JFrame();
@@ -118,7 +110,9 @@ public class GUI {
 				futureValue.setText("$ " + total);
 		
 			}
-		});
+		}				);
+		
+		
 		calculateButton.setBounds(250, 210, 127, 41);
 		frame.getContentPane().add(calculateButton);
 	}
